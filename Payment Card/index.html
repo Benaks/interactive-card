@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Space+Grotesk">
+    <style>
+        font-family :Space.Grotesk;
+    </style>
+  <title>Frontend Mentor | Interactive card details form</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="front" >
+                <img id="z" src="card-logo.svg" alt="logo">
+                <h2 id="number">0000 0000 0000 0000</h2>
+                <div class="name-exp">
+                    <p id="name">JANE APPLESEED</p>
+                    <p><span id="month">00</span>/<span id="year">00</span></p>
+                </div>
+            </div>
+            <div class="back">
+                <p id="cvc">000</p>
+
+            </div>
+        </div>
+        
+           <form action="" method="get" id="form">
+            <div class="right">
+                <div class="details">
+                 <div class="name">
+                     <h6>CARDHOLDER NAME</h6>
+                 <input id="nameVal" name="username" placeholder="e.g Jane Appleseed" type="text" onblur="getVal()"  required />
+                    </div>
+     
+                    <div class="number">
+                 <h6>CARD NUMBER</h6>
+                 <input id="numVal" name="a/c number" placeholder="e.g 1234 5678 9123 0000" type="" onblur="getNum()" required/>
+                 </div>
+     
+                <div class="dc">
+                 <div class="date">
+                     <h6>EXP. DATE (MM/YY)</h6>
+                     <input id ="monthVal" name="month" placeholder="MM" type="" onblur="getMonth()" required oninvalid="this.setCustomValidity('cant be blank')" oninput="this.setCustomValidity('')">
+                     <input id="yearVal" name="year" placeholder="YY" type="" onblur="getYear()" required oninvalid="this.setCustomValidity('cant be blank')" oninput="this.setCustomValidity('')">
+                 </div>
+                 <div class="cvc">
+                     <h6>CVC</h6>
+                     <input id="cvcVal" name="cvc" placeholder="e.g 123" type="" onblur="getCvc()" required oninvalid="this.setCustomValidity('cant be blank')" oninput="this.setCustomValidity('')">
+                     
+                 </div>
+                </div> 
+                
+                <button onclick="completePay()">confirm</button>
+             </div>
+            
+             </div>
+           </form>
+        
+        </div>
+        
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="#">Ben Akaager</a>.
+          </div>
+    
+  <script src="card.js"></script>
+</body>
+</html>

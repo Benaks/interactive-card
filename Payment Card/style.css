@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:consolas ;
+    background-color: white;
+    background-image:url("bg-main-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 40% 100%;
+}
+.container{
+    display: flex;
+    width: 90%;
+    height: 80%;
+}
+.left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items:left ;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.left img{
+width: 70%;
+}
+.back{
+    margin: 30px 0px 0px 250px;
+    width: 380px;
+    height: 200px;
+    background-image: url("bg-card-back.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+}
+.back p{
+    padding: 90px 10px 50px 300px;
+}
+.front{
+    margin: 30px 0px 0px 150px;
+    width: 380px;
+    height: 200px;
+    background-image: url("bg-card-front.png");
+    background-size: 100% 100%;
+    padding: 20px 0px 20px 30px;
+}
+
+.front img{
+    width: 60px;
+    padding-bottom: 50px;
+}
+.front h2 , P{
+    padding-bottom: 20px;
+    color: white;
+    font-weight:500;
+    letter-spacing: 4px;
+}
+.front p{
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.name-exp{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-left: 100px;
+}
+h6{
+    color:hsl(278, 68%, 11%) ;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.details{
+    width: 100%;
+}
+.name{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.number{
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+.name input, .number input{
+    height:35px ;
+    width: 320px;
+    font-family:consolas;
+    padding-left: 10px;
+    border: 2px solid hsl(270, 3%, 87%);
+    border-radius: 5px;
+}
+input:hover{
+    cursor: pointer;
+}
+
+.dc{
+    display: flex;
+    margin-bottom: 30px;
+}
+.date{
+    margin-bottom: 20px;
+}
+.date input{
+width: 70px;
+height: 35px;
+padding-left: 10px;
+font-family: consolas;
+border: 2px solid hsl(270, 3%, 87%);
+border-radius: 5px;
+}
+
+.cvc{
+    margin-left: 20px;
+}
+.cvc input{
+    width: 150px;
+    height: 35px;
+    font-family: consolas;
+    padding-left: 10px;
+    border: 2px solid hsl(270, 3%, 87%);
+    border-radius: 5px;
+}
+
+button{
+    height: 40px;
+    width: 320px;
+    border: none;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+@media(max-width:700px){
+    body{
+        background-image: none;
+    }
+    .container{
+        flex-direction: column;
+        width:100vw;
+        height:100vh;
+    }
+    .front{
+        margin: 100px 100px 0px 20px ;
+        width: 250px;
+        height: 140px;
+        position:absolute;
+        z-index: 1;
+    }
+    .front img{
+        padding-bottom: 30px;
+        width: 30px;
+    }
+    .front h2, p{
+        font-size: 10px;
+    }
+    .back{
+        margin: 20px 10px  70px 100px;
+        width: 250px;
+        height: 140px;
+        position:absolute;
+    }
+    .back p{
+        padding: 60px 0px 60px 190px;
+    }
+    .left
+    { 
+        width: 100%;
+        height: 40%;
+        background-size: 100% 80%;
+        background-repeat: no-repeat;
+        background-image: url("bg-main-mobile.png");
+        
+
+    }
+    .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+        padding-left: 0px;
+        margin-top: 100px;
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .name input, .number input,input{
+        height: 50px;
+        width: 100%;
+    
+    }
+    
+    .name, .number{
+        width: 320px;
+    }
+    .dc input{
+        height: 50px;
+    }
+}
+.attribution { font-size: 11px; text-align: center;
+    padding-top: 0px;
+ }
+    .attribution a { color: hsl(228, 45%, 44%); }

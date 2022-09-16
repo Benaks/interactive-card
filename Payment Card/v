@@ -1,0 +1,22 @@
+<div class="details">
+            <div class="name">
+                <h6>CARDHOLDER NAME</h6>
+            <input placeholder="e.g Jane Appleseed" type="text">
+               </div>
+
+               <div class="number">
+            <h6>CARD NUMBER</h6>
+            <input placeholder="e.g 1234 5678 9123 0000" type="number">
+            </div>
+
+           <div class="dc">
+            <div class="date">
+                <h6>EXP. DATE (MM/YY)</h6>
+                <input placeholder="MM" type="number">
+                <input placeholder="YY" type="number">
+            </div>
+            <div class="ccv">
+                <h6>CCV</h6>
+                <input placeholder="e.g 123" type="number">
+                
+            </div>
